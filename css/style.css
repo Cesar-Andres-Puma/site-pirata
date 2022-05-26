@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+ background-image: linear-gradient(to right, rgb(0, 0, 0) 25%, rgb(105, 16, 16));
+}
+header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(42, 49, 49);
+    color: white;
+}
+header #menu{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+#menu a{
+    color:white;
+}
+header nav > ul{
+    display: flex;
+}
+header nav ul > a{
+    color: white;
+    font-size: 25px;
+}
+header nav ul li{
+    padding: 1rem;
+}
+header nav ul > a:hover, header nav ul a > li:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(219, 218, 217);
+    transition: 0.5s;
+}
+#buscador{
+    display: flex;
+}
+#buscador input{
+margin-right: 5px;
+}
+#buscador > button{
+    padding: 5%;
+}
+#buscador > button:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    transition: 0.5s;
+}
+header #sub-menu > ul{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+header #sub-menu ul > a{
+    color: white;
+    font-size: 20px;
+    padding: 0.5rem;
+}
+header #sub-menu ul > a:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(219, 218, 217);
+    transition: 0.5s;
+}
+article h1{
+    color: white;
+    text-align: center;
+    font-size: 3.5vh;
+    margin: 15px 0;
+}
+
+
+#flex-card {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 20px;
+  place-content: center;
+}
+.card-mains {
+  background-image: url(../img/007.jpg);
+  width: 250px;
+  height: 400px;
+  background-size: cover;
+  border: 1px solid rgb(218, 215, 215);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+#filme-2{
+    background-image: url(../img/e97b78b2dd44e2954b79a9752ee30d65.jpg);
+}
+#filme-3{
+    background-image: url(../img/R.jpg);
+}
+#filme-4{
+    background-image: url(../img/red-crescer-e-uma-fera-download-torrent-2022-dublado-dual-audio-bluray-1080p-720p-4k-hd.jpg);
+}
+#filme-5{
+    background-image: url(../img/homem-aranha-sem-volta-para-casa-download-torrent-2022-dublado-dual-audio-bluray-1080p-720p-4k-hd.jpg);
+}
+#filme-6{
+    background-image: url(../img/o-projeto-adam-download-torrent-2022-dublado-dual-audio-bluray-1080p-720p-4k-hd.jpg);
+}
+button {
+  color: white;
+  background-color: rgb(0, 0, 0);
+  border: none;
+  padding: 5px;
+}
+.caixa-invisivel {
+  width: 250px;
+  position: relative;
+}
+.botao-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.botao-2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.botao-3 {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+.textos {
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  color: rgb(0, 0, 0);
+}
+.textos > p {
+  font-size: 20px;
+}
+.textos:hover{
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.733);
+}
+@media screen and (max-width: 780px) {
+
+  #flex-card {
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+  }
+}
+@media screen and (max-width: 530px) {
+  #flex-card {
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+}
